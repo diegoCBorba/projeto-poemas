@@ -19,6 +19,7 @@
 * {
     margin: 0px;
     padding: 0px;
+    font-family: var(--fonte-padrao);
 }
 
 html, body{
@@ -47,7 +48,35 @@ main{
     background-color: var(--cor4);
     max-width: 1000px;
     min-width: 400px;
+    padding: 20px 0px 20px 0px;
     margin: auto;
+}
+
+section{
+    padding: 10px;
+    border-radius: 5px;
+}
+
+main img{
+    max-width: 300px;
+    max-height: 150px;
+}
+
+main nav{
+    background: var(--cor3);
+    text-align: center;
+    padding: 10px;
+}
+
+main nav a{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+section{
+    background-color: white;
+    margin: 10px;
 }
 
 footer{
