@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Passion+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Klee+One&display=swap");
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
 .img-logo {
   width: 150px;
   height: 150px;
@@ -10,7 +15,7 @@ header {
   display: block;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top center;
 }
 
 .header-top {
@@ -25,6 +30,7 @@ header {
 .header-top h1 {
   color: white;
   font-size: 1.8em;
+  margin: 0px 20px 0px 20px;
 }
 
 .header-center {
@@ -33,6 +39,7 @@ header {
   font-size: 1.2em;
   max-width: 600px;
   margin: auto;
+  color: white;
 }
 .header-center p#frase {
   text-decoration: none;
@@ -52,6 +59,98 @@ header {
     padding-top: 20px;
   }
 }
+.about {
+  background-color: #422911;
+}
+
+.about-content {
+  padding: 30px 10px 20px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
+  gap: 14px;
+}
+.about-content img {
+  max-width: 760px;
+}
+
+.about-content div {
+  flex: 1;
+}
+
+.about-description {
+  color: white;
+  text-align: right;
+}
+.about-description h1 {
+  margin-bottom: 15px;
+  font-size: 1.8em;
+}
+.about-description p {
+  line-height: 150%;
+}
+
+@media screen and (max-width: 760px) {
+  .about-content {
+    flex-direction: column;
+  }
+  .about-description {
+    text-align: center;
+  }
+}
+.space-main {
+  margin: 10px;
+}
+
+.geral-autor {
+  background-color: white;
+  border-radius: 10px;
+  color: black;
+}
+
+.autor-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+}
+
+.apresentacao-autor {
+  padding: 10px;
+}
+.apresentacao-autor h1 {
+  padding-bottom: 10px;
+}
+
+.apresentacao-autor button {
+  border: 1px solid #422911;
+  color: #422911;
+  padding: 10px 40px;
+  display: block;
+  margin: auto;
+  margin-top: 10px;
+  -webkit-text-decoration: center;
+          text-decoration: center;
+  text-align: center;
+  transition: 0.4s;
+}
+
+.apresentacao-autor button:hover {
+  border: 1px solid #422911;
+  color: white;
+  background-color: #422911;
+}
+
+@media screen and (max-width: 760px) {
+  .autor-content {
+    flex-direction: column;
+  }
+  .autor-content img {
+    max-width: 200px;
+    max-height: 400px;
+  }
+}
 :root {
   --fonte-padrao: Verdana, Geneva, sans-serif;
   --fonte-titulo: "Passion One", cursive;
@@ -69,14 +168,18 @@ header {
   box-sizing: border-box;
   outline: none;
   font-family: var(--fonte-padrao);
-  color: white;
 }
 
 body {
-  background-color: var(--cor5);
+  background-color: var(--cor3);
   width: 100%;
   height: 100vh;
   position: relative;
+}
+
+button {
+  font-family: var(--fonte-padrao);
+  cursor: pointer;
 }
 
 img {

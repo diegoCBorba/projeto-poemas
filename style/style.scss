@@ -25,14 +25,18 @@
     box-sizing: border-box;
     outline: none;
     font-family: var(--fonte-padrao);
-    color: white;
 }
 
 body{
-    background-color: var(--cor5);
+    background-color: var(--cor3);
     width: 100%;
     height: 100vh;
     position: relative;
+}
+
+button{
+    font-family: var(--fonte-padrao);
+    cursor: pointer;
 }
 
 img{
