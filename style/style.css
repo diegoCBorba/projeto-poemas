@@ -1,97 +1,107 @@
-@charset "UTF-8";
-
-@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Klee+One&display=swap');
-
-:root{
-    --fonte-padrao: Verdana, Geneva, sans-serif;
-    --fonte-titulo: 'Passion One', cursive;
-    --fonte-poema: 'Klee One', cursive;
-
-    --cor1: #C27930;
-    --cor2: #8C6D4D;
-    --cor3: #75491D;
-    --cor4: #C2966B;
-    --cor5: #422911;
+@import url("https://fonts.googleapis.com/css2?family=Passion+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Klee+One&display=swap");
+:root {
+  --fonte-padrao: Verdana, Geneva, sans-serif;
+  --fonte-titulo: "Passion One", cursive;
+  --fonte-poema: "Klee One", cursive;
+  --cor1: #C27930;
+  --cor2: #8C6D4D;
+  --cor3: #75491D;
+  --cor4: #C2966B;
+  --cor5: #422911;
 }
 
 * {
-    margin: 0px;
-    padding: 0px;
-    font-family: var(--fonte-padrao);
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  outline: none;
+  font-family: var(--fonte-padrao);
 }
 
-html, body{
-    background-color: var(--cor3);
+html, body {
+  background-color: var(--cor3);
 }
 
-header{
-    background-color: var(--cor5);
-    color:white;
-    text-align: center;
-    padding: 50px;
+header {
+  background-color: var(--cor5);
+  color: white;
+  text-align: center;
+  padding: 50px;
 }
 
-header > h1{
-    font-family: var(--fonte-titulo);
-    font-variant: small-caps;
-    font-size: 2.4em;
-    padding-bottom: 10px;
+header > h1 {
+  font-family: var(--fonte-titulo);
+  font-variant: small-caps;
+  font-size: 2.4em;
+  padding-bottom: 10px;
 }
 
-header > p{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+header > p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-main{
-    background-color: var(--cor4);
-    max-width: 1000px;
-    min-width: 400px;
-    padding: 20px 0px 20px 0px;
-    margin: auto;
+main {
+  background-color: var(--cor4);
+  max-width: 1000px;
+  min-width: 400px;
+  padding: 20px 0px 20px 0px;
+  margin: auto;
 }
 
-section{
-    padding: 10px;
-    border-radius: 5px;
+section {
+  padding: 10px;
+  border-radius: 5px;
 }
 
-main img{
-    max-width: 300px;
-    max-height: 150px;
+.sobre-autor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  padding: 20px 10px 20px 10px;
 }
 
-main nav{
-    background: var(--cor3);
-    text-align: center;
-    padding: 10px;
+@media screen and (max-width: 760px) {
+  .sobre-autor {
+    flex-direction: column;
+  }
+}
+main img {
+  max-width: 300px;
+  max-height: 200px;
 }
 
-main nav a{
-    text-decoration: none;
-    font-weight: bold;
-    color: white;
+main nav {
+  background: var(--cor3);
+  text-align: center;
+  padding: 10px;
 }
 
-section{
-    background-color: white;
-    margin: 10px;
+main nav a {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
 }
 
-footer{
-    text-align: center;
-    color: white;
-    background-color: var(--cor5);
-    padding: 5px;
+section {
+  background-color: white;
+  margin: 10px;
 }
 
-footer a{
-    text-decoration: none;
-    font-weight: bold;
-    color: white;
+footer {
+  text-align: center;
+  color: white;
+  background-color: var(--cor5);
+  padding: 5px;
 }
 
-footer a:hover{
-    text-decoration: underline;
+footer a {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
 }
+
+footer a:hover {
+  text-decoration: underline;
+}/*# sourceMappingURL=style.css.map */
