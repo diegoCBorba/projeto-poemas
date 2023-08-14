@@ -107,6 +107,7 @@ header {
   background-color: white;
   border-radius: 10px;
   color: black;
+  padding-bottom: 10px;
 }
 
 .autor-content {
@@ -123,7 +124,7 @@ header {
   padding-bottom: 10px;
 }
 
-.apresentacao-autor button {
+.botao-autor {
   border: 1px solid #422911;
   color: #422911;
   padding: 10px 40px;
@@ -136,19 +137,103 @@ header {
   transition: 0.4s;
 }
 
-.apresentacao-autor button:hover {
+.botao-autor:hover {
   border: 1px solid #422911;
   color: white;
   background-color: #422911;
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 1100px) {
   .autor-content {
     flex-direction: column;
   }
   .autor-content img {
     max-width: 200px;
     max-height: 400px;
+  }
+  .autor-content p {
+    padding-bottom: 20px;
+  }
+}
+.titulo-apresentacao {
+  background-color: black;
+  text-align: center;
+  color: white;
+}
+.titulo-apresentacao h1 {
+  padding-top: 50px;
+  font-variant: small-caps;
+  font-family: var(--fonte-titulo);
+  font-size: 48px;
+}
+.titulo-apresentacao p {
+  padding-bottom: 50px;
+}
+.titulo-apresentacao a {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+}
+
+.texto-autor {
+  display: none;
+}
+
+.texto {
+  line-height: 2em;
+  font-family: var(--fonte-poema);
+  font-size: 25px;
+}
+
+section > p.margem {
+  padding-bottom: 2em;
+}
+
+section.normal {
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  color: black;
+  padding-left: 80px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+section.imagem {
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  box-shadow: inset 2px 2px 10px rgba(0, 0, 0, 0.418);
+  color: white;
+  padding-left: 80px;
+  background-color: rgba(0, 0, 0, 0.623);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+section.imagem > p {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.632), rgba(0, 0, 0, 0.219));
+  text-shadow: 1px 1px 0px black;
+  display: inline-block;
+  padding: 5px;
+}
+
+section#img01 {
+  background-image: url(../imagens/background001.jpg);
+  background-position: center right;
+}
+
+section#img02 {
+  background-image: url(../imagens/background002.jpg);
+}
+
+@media screen and (max-width: 760px) {
+  .texto {
+    font-size: 3.5vw;
+  }
+  section.normal {
+    padding-left: 30px;
+  }
+  section.imagem {
+    padding-left: 30px;
   }
 }
 :root {
